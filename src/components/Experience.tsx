@@ -31,28 +31,31 @@ const Experience = () => {
     <section id="experience" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Work Experience</h2>
-        <div className="relative max-w-2xl mx-auto">
-          <div className="absolute left-1/2 w-0.5 h-full bg-gray-200"></div>
+        <div className="relative max-w-3xl mx-auto">
+          {/* The vertical timeline bar */}
+          <div className="absolute left-4 top-0 w-0.5 h-full bg-gray-200"></div>
+
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className="mb-12 flex items-center w-full"
-              initial={{ opacity: 0, x: index % 2 === 0 ? '50%' : '-50%' }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="mb-8 pl-12 relative"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <h3 className="text-xl font-bold">{exp.role}</h3>
-                  <p className="text-md font-semibold text-blue-600 mb-2">{exp.company}</p>
-                  <p className="text-sm text-gray-500 mb-4">{exp.date}</p>
-                  <ul className="list-disc list-inside text-left text-gray-600">
-                    {exp.duties.map((duty, i) => <li key={i}>{duty}</li>)}
-                  </ul>
-                </div>
+              {/* The timeline dot */}
+              <div className="absolute left-4 -ml-3 w-6 h-6 rounded-full bg-blue-600 border-4 border-white"></div>
+
+              {/* The content card */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-bold">{exp.role}</h3>
+                <p className="text-md font-semibold text-blue-600 mb-2">{exp.company}</p>
+                <p className="text-sm text-gray-500 mb-4">{exp.date}</p>
+                <ul className="list-disc list-inside text-left text-gray-600 space-y-1">
+                  {exp.duties.map((duty, i) => <li key={i}>{duty}</li>)}
+                </ul>
               </div>
-              <div className="absolute left-1/2 -ml-3 w-6 h-6 rounded-full bg-blue-600 border-4 border-white"></div>
             </motion.div>
           ))}
         </div>
