@@ -47,8 +47,8 @@ const projects = [
   },
   {
   title: "Real-Time Analysis of Streaming NYC Taxi Data via a Scalable Graph Pipeline Whisperer: Real-Time Graph Data Pipeline",
-  description: "This project establishes an efficient and reliable framework for processing high-throughput data streams[cite: 4, 135]. [cite_start]It ingests continuous document data (NYC Taxi dataset [cite: 9][cite_start]) using Kafka [cite: 12][cite_start], orchestrates all components (Kafka, Zookeeper, Neo4j) with Kubernetes [cite: 13, 69, 181][cite_start], and streams the refined data into a Neo4j graph database[cite: 5, 136]. [cite_start]The system enables near real-time graph analysis, such as PageRank and BFS, to extract actionable insights from the interconnected data[cite: 6, 10, 63].",
-  short_description: "An orchestrated data pipeline using Kubernetes [cite: 13, 179] [cite_start]and Kafka [cite: 12] [cite_start]to stream and process real-time data in a Neo4j graph database[cite: 5, 8].",
+  description: "This project establishes an efficient and reliable framework for processing high-throughput data streams. It ingests continuous document data (NYC Taxi dataset) using Kafka, orchestrates all components (Kafka, Zookeeper, Neo4j) with Kubernetes, and streams the refined data into a Neo4j graph database. The system enables near real-time graph analysis, such as PageRank and BFS, to extract actionable insights from the interconnected data.",
+  short_description: "An orchestrated data pipeline using Kubernetes and Kafka to stream and process real-time data in a Neo4j graph database.",
   url: "https://github.com/Fall-24-CSE511-Data-Processing-at-Scale/Project-1-avelayu2",
   tags: ["Kubernetes","Kafka","Neo4j","Docker","Python","Data Engineering","Data Streaming","Graph Database","Helm"]
 }
