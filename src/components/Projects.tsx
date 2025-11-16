@@ -38,6 +38,20 @@ const projects = [
     short_description: 'A project focused on optimizing the speed and energy efficiency of simulated robots.',
     tags: ['Python', 'Reinforcement Learning', 'Genetic Algorithms', 'MuJoCo', 'OpenAI Gym']
   },
+  {
+  title: "Serendip: Topic Model-Driven Visual Exploration of Text Corpora",
+  description: "Led the development of a novel visualization tool for humanities scholars to analyze and discover patterns in large text corpora (1000+ documents/full-length books). The system uses **probabilistic topic models** (LDA) to structure data and facilitates a fluid, multi-scale exploration path, successfully integrating corpus-level trends with close, passage-level reading. Its core architecture promotes **serendipitous discovery** by linking three interactive views.",
+  short_description: "A multi-scale visualization platform using topic modeling (LDA) to enable pattern discovery and deep textual analysis across large corpora.",
+  url: "https://serendip.vercel.app/",
+  tags: ["Visualization", "D3.js", "Python (Flask)", "Topic Modeling (LDA)", "Multi-Scale UI", "Data Aggregation"]
+  },
+  {
+  title: "Real-Time Analysis of Streaming NYC Taxi Data via a Scalable Graph Pipeline Whisperer: Real-Time Graph Data Pipeline",
+  description: "This project establishes an efficient and reliable framework for processing high-throughput data streams[cite: 4, 135]. [cite_start]It ingests continuous document data (NYC Taxi dataset [cite: 9][cite_start]) using Kafka [cite: 12][cite_start], orchestrates all components (Kafka, Zookeeper, Neo4j) with Kubernetes [cite: 13, 69, 181][cite_start], and streams the refined data into a Neo4j graph database[cite: 5, 136]. [cite_start]The system enables near real-time graph analysis, such as PageRank and BFS, to extract actionable insights from the interconnected data[cite: 6, 10, 63].",
+  short_description: "An orchestrated data pipeline using Kubernetes [cite: 13, 179] [cite_start]and Kafka [cite: 12] [cite_start]to stream and process real-time data in a Neo4j graph database[cite: 5, 8].",
+  url: "https://github.com/Fall-24-CSE511-Data-Processing-at-Scale/Project-1-avelayu2",
+  tags: ["Kubernetes","Kafka","Neo4j","Docker","Python","Data Engineering","Data Streaming","Graph Database","Helm"]
+}
 ];
 
 const Projects = () => {
